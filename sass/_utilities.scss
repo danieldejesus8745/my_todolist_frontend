@@ -5,6 +5,7 @@
 
 .main {
     padding: 20px;
+    text-align: center;
 }
 
 .form {
@@ -45,4 +46,8 @@
 
 .btn:hover {
     background-color: $second-color;
+}
+
+.signup-signin {
+    padding: 20px;
 }
