@@ -1,0 +1,48 @@
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.main {
+    padding: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs {
+    width: 300px;
+    outline: none;
+    border: 2px solid $fourth-color;
+    border-radius: 50px;
+    margin: 5px;
+    padding: 15px;
+    font-size: 15pt;
+    transition: all .3s;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.inputs:focus {
+    border: 2px solid $first-color;
+}
+
+.input-warning {
+    color: red;
+}
+
+.btn {
+    background-color: $first-color;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:focus {
+    border: none;
+}
+
+.btn:hover {
+    background-color: $second-color;
+}

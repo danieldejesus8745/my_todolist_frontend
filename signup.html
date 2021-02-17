@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lista de Tarefas | Cadastro</title>
+        <link rel="shortcut icon" href="img/todolist_logo.png" type="image/x-icon" />
+        <link rel="stylesheet" href="css/signup_sass.css" />
+    </head>
+    <body>
+
+        <header class="header">
+            <h1>Cadastro</h1>
+        </header>
+
+        <main class="main">
+            <section>
+                <form class="form" id="form">
+                    <input type="text" class="inputs" id="name" placeholder="Nome" autocomplete="off" required />
+                    <input type="email" class="inputs" id="email" placeholder="E-mail" autocomplete="off" required />
+                    <p id="email-warning" class="input-warning"></p>
+                    <input type="password" class="inputs" id="password" placeholder="Senha" autocomplete="off" required />
+                    <input type="submit" value="Cadastrar" class="inputs btn" />
+                </form>
+            </section>
+        </main>
+
+        <script src="js/signup.js"></script>
+    </body>
+</html>

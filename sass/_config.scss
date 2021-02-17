@@ -1,0 +1,25 @@
+$first-color: orange;
+$second-color: #ffb222;
+$third-color: gray;
+$fourth-color: lightgray;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 15pt;
+    color: $third-color;
+}
+
+a {
+    text-decoration: none;
+    color: $first-color;
+}
+
+a:hover {
+    color: $second-color;
+    text-decoration: underline;
+}

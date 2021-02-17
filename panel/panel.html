@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lista de Tarefas | Painel</title>
+        <link rel="shortcut icon" href="../img/todolist_logo.png" type="image/x-icon" />
+        <link rel="stylesheet" href="../css/panel_sass.css" />
+    </head>
+    <body>
+
+        <header class="header">
+            <h1 id="user-name">User here</h1>
+            <p>Sua lista de tarefas - <a href="#" id="logout">Sair</a></p>
+        </header>
+
+        <main class="main">
+            <section>
+                <form class="form" id="form">
+                    <input type="text" class="inputs" id="task" placeholder="Nova tarefa" autocomplete="off" required />
+                    <input type="submit" value="+" class="inputs btn" />
+                </form>
+            </section>
+        </main>
+
+        <script src="../js/panel.js"></script>
+    </body>
+</html>
