@@ -17,10 +17,17 @@
 
         <main class="main">
             <section>
-                <form class="form" id="form">
-                    <input type="text" class="inputs" id="task" placeholder="Nova tarefa" autocomplete="off" required />
-                    <input type="submit" value="+" class="inputs btn" />
+                <form class="form panel-form" id="form">
+                    <input type="text" class="inputs panel-inputs" id="task" placeholder="Nova tarefa" maxlength="29" autocomplete="off" required />
+                    <input type="submit" value="+" class="inputs btn panel-btn" />
                 </form>
+
+                <div class="tasks" id="tasks">
+                    <!-- <div class="task">
+                        <p>Tarefa</p>
+                        <div><img src="../img/todolist_logo.png" alt="done.png" /></div>
+                    </div> -->
+                </div>
             </section>
         </main>
 
