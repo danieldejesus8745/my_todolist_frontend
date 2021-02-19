@@ -12,6 +12,14 @@ passwordInput.addEventListener('focus', e => {
     passwordInput.textContent = '';
 });
 
+const hideBtnAnimation = () => {
+    const loginBtn = document.querySelector('#login-btn');
+    const loginBtnAnimation = document.querySelector('#login-btn-animation');
+    
+    loginBtn.style.display = 'block';
+    loginBtnAnimation.style.display = 'none';
+}
+
 const sendUserObject = userObject => {
     const url = "https://sb-my-todolist.herokuapp.com/api/v1/user/read";
 
@@ -29,9 +37,11 @@ const sendUserObject = userObject => {
         if (user.message === 'email-error') {
             const emailWarning = document.querySelector('#email-warning');
             emailWarning.textContent = 'E-mail não encontrado';
+            hideBtnAnimation();
         } else if (user.message === 'password-error') {
             const passwordWarning = document.querySelector('#password-warning');
             passwordWarning.textContent = 'Senha incorreta';
+            hideBtnAnimation();
         } else {
             sessionStorage.setItem('userName', user.name);
             sessionStorage.setItem('userEmail', user.email);
@@ -48,6 +58,14 @@ const createUserObject = (email, password) => {
     sendUserObject(userObject);
 }
 
+const loadBtnAnimation = () => {
+    const loginBtn = document.querySelector('#login-btn');
+    const loginBtnAnimation = document.querySelector('#login-btn-animation');
+    
+    loginBtn.style.display = 'none';
+    loginBtnAnimation.style.display = 'block';
+}
+
 form.addEventListener('submit', e => {
     e.preventDefault();
 
@@ -55,4 +73,5 @@ form.addEventListener('submit', e => {
     const password = document.querySelector('#password').value;
 
     createUserObject(email, password);
+    loadBtnAnimation();
 });

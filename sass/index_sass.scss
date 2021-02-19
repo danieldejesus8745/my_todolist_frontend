@@ -1,2 +1,21 @@
 @import 'config';
 @import 'utilities';
+
+.index-btn {
+    animation: loading 2s infinite;
+    animation-direction: alternate;
+    font-weight: 700;
+    display: none;
+}
+
+@keyframes loading {
+    from {
+        width: 300px;
+        background-color: $first-color;
+    }
+
+    to {
+        width: 60px;
+        background-color: $second-color;
+    }
+}
